@@ -1,26 +1,194 @@
 @import "tailwindcss";
 
+/* ─── Saudi (Headings) ──────────────────────────────── */
+@font-face {
+  font-family: "Saudi";
+  src: url("/fonts/Saudi-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Saudi";
+  src: url("/fonts/Saudi-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ─── ExpoArabic (Body / Content) ──────────────────── */
+@font-face {
+  font-family: "ExpoArabic";
+  src: url("/fonts/ALFONT_COM_ALFONT_COM_EXPOARABIC-LIGHT-1.TTF") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "ExpoArabic";
+  src: url("/fonts/EXPOARABIC-BOOK.TTF") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "ExpoArabic";
+  src: url("/fonts/EXPOARABIC-MEDIUM.TTF") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "ExpoArabic";
+  src: url("/fonts/EXPOARABIC-SEMIBOLD.TTF") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "ExpoArabic";
+  src: url("/fonts/ALFONT_COM_ALFONT_COM_EXPOARABIC-BOLD.OTF") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ─── English Fonts ─────────────────────────────────── */
+@font-face {
+  font-family: "PlayfairDisplay";
+  src: url("/fonts/PlayfairDisplay-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "PlayfairDisplay";
+  src: url("/fonts/PlayfairDisplay-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "PlayfairDisplay";
+  src: url("/fonts/PlayfairDisplay-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("/fonts/Lato-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lato";
+  src: url("/fonts/Lato-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lato";
+  src: url("/fonts/Lato-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ─── CSS Variables ─────────────────────────────────── */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --gold: #c9a84c;
+  --gold-light: #f0e2b0;
+  --gold-dark: #9b7a2a;
+  --dark: #1a1209;
+  --dark-2: #2a1f0a;
+  --overlay: rgba(15, 10, 3, 0.50);
+
+  --font-ar-heading: "Saudi", sans-serif;
+  --font-ar-body: "ExpoArabic", sans-serif;
+  --font-en-heading: "PlayfairDisplay", Georgia, serif;
+  --font-en-body: "Lato", Arial, sans-serif;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+/* ─── Base ───────────────────────────────────────────── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--dark);
+  color: var(--gold-light);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: var(--font-ar-body);
+}
+
+[dir="ltr"] body {
+  font-family: var(--font-en-body);
+}
+
+/* ─── Scrollbar ──────────────────────────────────────── */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--dark);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--gold-dark);
+  border-radius: 3px;
+}
+
+/* ─── Font utility classes ───────────────────────────── */
+.font-heading {
+  font-family: var(--font-ar-heading);
+}
+.font-body {
+  font-family: var(--font-ar-body);
+}
+
+[dir="ltr"] .font-heading {
+  font-family: var(--font-en-heading);
+}
+[dir="ltr"] .font-body {
+  font-family: var(--font-en-body);
+}
+
+/* ─── Gold divider line ──────────────────────────────── */
+.gold-divider {
+  width: 80px;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+  margin: 0 auto;
+}
+
+/* ─── Page background util ───────────────────────────── */
+.page-bg {
+  position: fixed;
+  inset: 0;
+  background-image: url("/images/pages-background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+.page-bg::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--overlay);
 }
