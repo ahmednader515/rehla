@@ -18,9 +18,9 @@ export default function PlaceCard({ place, index }: PlaceCardProps) {
     <motion.div
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: "-60px" }}
-      transition={{ duration: 0.6, delay: (index % 2) * 0.12, ease: "easeOut" }}
-      whileHover={{ y: -6, scale: 1.015 }}
+      viewport={{ once: true, margin: "-40px" }}
+      transition={{ duration: 0.6, delay: (index % 2) * 0.1, ease: "easeOut" }}
+      whileHover={{ y: -4, scale: 1.01 }}
       className="group relative rounded-3xl overflow-hidden shadow-2xl h-full cursor-pointer"
       style={{
         border: "1px solid rgba(201,168,76,0.2)",
@@ -30,7 +30,7 @@ export default function PlaceCard({ place, index }: PlaceCardProps) {
     >
       <Link href={`/place/${place.slug}`} className="flex h-full w-full">
 
-        {/* ── Text section (left, ~58%) ── */}
+        {/* Text section (left, ~58%) */}
         <div
           className="relative flex flex-col justify-between"
           style={{
@@ -38,51 +38,53 @@ export default function PlaceCard({ place, index }: PlaceCardProps) {
             background: "rgba(20,13,5,0.95)",
             flexShrink: 0,
             zIndex: 1,
-            padding: "1.5rem 3rem 1.5rem 1.5rem",
+            padding: "1.25rem 2.5rem 1.25rem 1.25rem",
           }}
         >
           {/* Image count badge */}
           <div
-            className="absolute top-4 left-4 rounded-full font-body font-semibold"
+            className="absolute top-3 left-3 rounded-full font-body font-semibold"
             style={{
               background: "rgba(201,168,76,0.85)",
               color: "var(--dark)",
-              fontSize: "0.8rem",
-              padding: "0.3rem 0.75rem",
+              fontSize: "0.75rem",
+              padding: "0.25rem 0.65rem",
               whiteSpace: "nowrap",
             }}
           >
             {place.images.length} {isArabic ? "صور" : "photos"}
           </div>
 
-          <div style={{ marginTop: "1.75rem" }}>
+          <div style={{ marginTop: "1.5rem" }}>
             <h3
-              className="font-heading text-xl font-bold leading-snug mb-3"
+              className="font-heading font-bold leading-snug mb-2"
               style={{
                 color: "var(--gold)",
                 textAlign: isArabic ? "right" : "left",
+                fontSize: "clamp(0.95rem, 2vw, 1.2rem)",
               }}
             >
               {isArabic ? place.nameAr : place.nameEn}
             </h3>
             <p
-              className="font-body text-sm leading-relaxed line-clamp-4 opacity-80"
+              className="font-body leading-relaxed line-clamp-3 opacity-80"
               style={{
                 color: "var(--gold-light)",
                 textAlign: isArabic ? "right" : "left",
+                fontSize: "clamp(0.75rem, 1.5vw, 0.875rem)",
               }}
             >
               {isArabic ? place.shortDescAr : place.shortDescEn}
             </p>
           </div>
 
-          {/* CTA */}
           <motion.div
-            className="mt-4 w-full py-2.5 text-center font-heading text-sm font-semibold transition-all duration-300"
+            className="mt-3 w-full py-2 text-center font-heading font-semibold transition-all duration-300"
             style={{
               borderTop: "1px solid rgba(201,168,76,0.4)",
               borderBottom: "1px solid rgba(201,168,76,0.4)",
               color: "var(--gold)",
+              fontSize: "clamp(0.75rem, 1.5vw, 0.875rem)",
             }}
             whileHover={{ background: "rgba(201,168,76,0.12)" }}
           >
@@ -90,27 +92,24 @@ export default function PlaceCard({ place, index }: PlaceCardProps) {
           </motion.div>
         </div>
 
-        {/* ── Image section (right, ~42%) ── */}
+        {/* Image section (right, ~42%) */}
         <div className="relative flex-1 overflow-hidden">
           <Image
             src={place.images[0]}
             alt={isArabic ? place.nameAr : place.nameEn}
             fill
             className="object-cover transition-transform duration-700 group-hover:scale-110"
-            sizes="(max-width: 640px) 100vw, 25vw"
+            sizes="(max-width: 768px) 42vw, 25vw"
           />
-          {/* Fade from text background color (left) to transparent (right) */}
           <div
             className="absolute inset-0"
             style={{
-              background: "linear-gradient(to right, rgba(20,13,5,0.95) 0%, rgba(20,13,5,0.5) 30%, rgba(20,13,5,0.1) 65%, transparent 100%)",
+              background: "linear-gradient(to right, rgba(20,13,5,0.95) 0%, rgba(20,13,5,0.4) 35%, transparent 100%)",
             }}
           />
         </div>
-
       </Link>
 
-      {/* Gold glow on hover */}
       <motion.div
         className="absolute inset-0 rounded-3xl pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-500"
         style={{ boxShadow: "inset 0 0 0 1.5px rgba(201,168,76,0.5)" }}

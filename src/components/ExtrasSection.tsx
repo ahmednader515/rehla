@@ -3,22 +3,25 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { useLanguage } from "@/context/LanguageContext";
+import { useIsMobile } from "@/hooks/useIsMobile";
 
 export default function ExtrasSection() {
   const { isArabic } = useLanguage();
+  const isMobile = useIsMobile();
 
   return (
     <section
-      className="relative z-10 px-4 pb-16 min-h-screen flex flex-col"
+      className="relative z-10 flex flex-col"
       style={{
         paddingTop: "2rem",
+        paddingBottom: isMobile ? "3rem" : "3rem",
+        paddingLeft: "1rem",
+        paddingRight: "1rem",
+        minHeight: isMobile ? "auto" : "100vh",
       }}
     >
-      {/* Background image — no dark overlay, GPU-composited to avoid scroll lag */}
-      <div
-        className="absolute inset-0 overflow-hidden"
-        style={{ zIndex: 0 }}
-      >
+      {/* Background image — no dark overlay */}
+      <div className="absolute inset-0 overflow-hidden" style={{ zIndex: 0 }}>
         <div
           style={{
             position: "absolute",
@@ -34,7 +37,7 @@ export default function ExtrasSection() {
 
       {/* Section heading */}
       <motion.div
-        className="text-center mb-10"
+        className="text-center mb-8"
         style={{ position: "relative", zIndex: 1 }}
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -42,23 +45,23 @@ export default function ExtrasSection() {
         transition={{ duration: 0.6 }}
       >
         <h2
-          className="font-heading text-3xl md:text-4xl font-bold"
-          style={{ color: "var(--gold)", marginBottom: "1.5rem" }}
+          className="font-heading font-bold"
+          style={{ color: "var(--gold)", marginBottom: "1rem", fontSize: isMobile ? "1.75rem" : "2.25rem" }}
         >
           {isArabic ? "المحتوى" : "Content"}
         </h2>
       </motion.div>
 
-      {/* Two cards side by side */}
+      {/* Two cards */}
       <div
-        className="flex flex-col md:flex-row gap-6 w-full max-w-5xl"
-        style={{ marginLeft: "auto", marginRight: "auto", position: "relative", zIndex: 1 }}
+        className="flex flex-col md:flex-row gap-6"
+        style={{ width: isMobile ? "90%" : "100%", maxWidth: "64rem", marginLeft: "auto", marginRight: "auto", position: "relative", zIndex: 1 }}
       >
         {/* Right card — quote image */}
         <motion.div
           className="relative flex-1 rounded-2xl overflow-hidden"
           style={{
-            minHeight: "520px",
+            minHeight: isMobile ? "260px" : "520px",
             border: "1px solid rgba(201,168,76,0.3)",
             boxShadow: "0 8px 32px rgba(0,0,0,0.5)",
           }}
@@ -80,9 +83,9 @@ export default function ExtrasSection() {
         <motion.div
           className="relative rounded-2xl overflow-hidden flex flex-col"
           style={{
-            minHeight: "520px",
+            minHeight: isMobile ? "320px" : "520px",
             width: "100%",
-            maxWidth: "320px",
+            maxWidth: isMobile ? "100%" : "320px",
             background: "rgba(26,18,9,0.75)",
             border: "1px solid rgba(201,168,76,0.4)",
             boxShadow: "0 8px 32px rgba(0,0,0,0.5)",
@@ -95,28 +98,26 @@ export default function ExtrasSection() {
           viewport={{ once: true }}
           transition={{ duration: 0.8, ease: "easeOut", delay: 0.15 }}
         >
-          <div className="relative w-full flex-1" style={{ minHeight: "380px" }}>
+          <div className="relative w-full flex-1" style={{ minHeight: isMobile ? "230px" : "380px" }}>
             <Image
               src="/images/extras-2.png"
               alt={isArabic ? "أمير منطقة عسير" : "Governor of Asir Region"}
               fill
               className="object-cover object-top"
-              sizes="320px"
+              sizes="(max-width: 768px) 100vw, 320px"
             />
           </div>
 
-          <div className="w-full text-center px-6" style={{ paddingTop: "1.25rem", paddingBottom: "2rem" }}>
+          <div className="w-full text-center px-6" style={{ paddingTop: "1.25rem", paddingBottom: "1.5rem" }}>
             <p
-              className="font-heading text-xl font-bold leading-relaxed"
-              style={{ color: "var(--gold)" }}
+              className="font-heading font-bold leading-relaxed"
+              style={{ color: "var(--gold)", fontSize: isMobile ? "1rem" : "1.25rem" }}
             >
-              {isArabic
-                ? "الأمير تركي بن طلال بن عبدالعزيز"
-                : "Prince Turki bin Talal bin Abdulaziz"}
+              {isArabic ? "الأمير تركي بن طلال بن عبدالعزيز" : "Prince Turki bin Talal bin Abdulaziz"}
             </p>
             <p
-              className="font-body text-base opacity-70 mt-2"
-              style={{ color: "var(--gold-light)" }}
+              className="font-body opacity-70 mt-1"
+              style={{ color: "var(--gold-light)", fontSize: isMobile ? "0.8rem" : "0.875rem" }}
             >
               {isArabic ? "أمير منطقة عسير" : "Governor of Asir Region"}
             </p>

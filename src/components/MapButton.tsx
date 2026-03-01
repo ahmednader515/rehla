@@ -17,17 +17,19 @@ export default function MapButton({ url }: MapButtonProps) {
       rel="noopener noreferrer"
       whileHover={{ scale: 1.04 }}
       whileTap={{ scale: 0.96 }}
-      className="inline-flex items-center gap-3 px-6 py-3 rounded-xl font-heading text-sm font-semibold transition-colors duration-300"
+      className="inline-flex items-center gap-3 rounded-xl font-heading font-semibold transition-colors duration-300"
       style={{
-        background: "linear-gradient(135deg, rgba(201,168,76,0.2), rgba(201,168,76,0.08))",
-        border: "1px solid rgba(201,168,76,0.55)",
+        background: "linear-gradient(135deg, rgba(201,168,76,0.25), rgba(201,168,76,0.1))",
+        border: "1.5px solid rgba(201,168,76,0.7)",
         color: "var(--gold)",
+        fontSize: "1.1rem",
+        padding: "0.85rem 2rem",
       }}
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        width="18"
-        height="18"
+        width="24"
+        height="24"
         viewBox="0 0 24 24"
         fill="none"
         stroke="currentColor"
