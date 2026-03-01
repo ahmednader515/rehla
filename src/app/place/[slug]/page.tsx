@@ -212,7 +212,7 @@ export default function PlacePage({ params }: PageProps) {
 
           {/* SVG curved separator */}
           <svg className="absolute inset-0 z-20 pointer-events-none" viewBox="0 0 100 100" preserveAspectRatio="none" style={{ width: "100%", height: "100%" }}>
-            <path d="M 65 0 C 65 40, 58 68, 46 100 L 100 100 L 100 0 Z" fill={PANEL_BG} />
+            <path d="M 58 0 C 65 55, 52 80, 46 100 L 100 100 L 100 0 Z" fill={PANEL_BG} />
           </svg>
 
           {/* RIGHT: Text panel (35%) */}
