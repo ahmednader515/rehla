@@ -1,52 +1,75 @@
 "use client";
 
-import { notFound } from "next/navigation";
 import Link from "next/link";
-import { motion, AnimatePresence } from "framer-motion";
-import { use, useEffect, useState } from "react";
 import Image from "next/image";
+import { motion } from "framer-motion";
 import Navbar from "@/components/Navbar";
-import MapButton from "@/components/MapButton";
-import { places } from "@/data/places";
 import { useLanguage } from "@/context/LanguageContext";
 import { useIsMobile } from "@/hooks/useIsMobile";
 
-interface PageProps {
-  params: Promise<{ slug: string }>;
-}
-
 const PANEL_BG = "rgb(12, 8, 2)";
 
-export default function PlacePage({ params }: PageProps) {
-  const { slug } = use(params);
-  const place = places.find((p) => p.slug === slug);
+const QUOTE_AR = `عندما يتواجد الصلاح في القلب تجد الجمال في الشخصية
+عندما يتواجد الجمال في الشخصية تجد السعادة في المنزل
+عندما تتواجد السعادة في المنزل تجد النظام في الأمة
+وعندما يتواجد النظام في الأمة تجد السلام في العالم`;
+
+const QUOTE_EN = `When righteousness is in the heart, you find beauty in character.
+When beauty is in character, you find happiness in the home.
+When happiness is in the home, you find order in the nation.
+And when order is in the nation, you find peace in the world.`;
+
+const ATTRIBUTION_AR = "صاحب السمو الملكي الأمير تركي بن طلال بن عبد العزيز آل سعود";
+const ATTRIBUTION_EN = "His Royal Highness Prince Turki bin Talal bin Abdulaziz Al Saud";
+
+const TITLE_AR = "صاحب السمو الملكي الأمير تركي بن طلال";
+const TITLE_EN = "His Royal Highness Prince Turki bin Talal";
+
+const EMIRS_AR = [
+  "الأمير : شويش بن ضويحي المطيري ١٣٣٨-١٣٣٩ هـ",
+  "الأمير : عبد الله بن إبراهيم بن سويلم ١٣٣٩ هـ",
+  "الأمير : فهد بن عبد الكريم العقيلي ١٣٣٩ هـ",
+  "الأمير : سعد بن سليمان بن عفيصان ١٣٤١ هـ",
+  "الأمير : عبد العزيز بن إبراهيم آل إبراهيم ١٣٤٢ هـ",
+  "الأمير : عبد الله بن إبراهيم العسكر ١٣٤٢ - ١٣٥٠ هـ",
+  "الأمير : تركي بن أحمد السديري ١٣٥٢ - ١٣٧١ هـ",
+  "الأمير : تركي بن محمد بن ماضي ١٣٧١ - ١٣٨٥ هـ",
+  "صاحب السمو الملكي الأمير : خالد بن فيصل بن عبد العزيز آل سعود ١٣٩١- ١٤٢٨ هـ",
+  "صاحب السمو الملكي الأمير : فيصل بن خالد بن عبد العزيز آل سعود ١٤٢٨ - ١٤٤٠ هـ",
+  "صاحب السمو الملكي الأمير : تركي بن طلال بن عبد العزيز آل سعود ١٤٤٠ - حتى الآن.",
+];
+
+const EMIRS_EN = [
+  "Emir: Shuwaish bin Duwaihi Al-Mutairi 1338-1339 AH",
+  "Emir: Abdullah bin Ibrahim bin Suwailim 1339 AH",
+  "Emir: Fahd bin Abdul Karim Al-Aqili 1339 AH",
+  "Emir: Saad bin Sulaiman bin Afisan 1341 AH",
+  "Emir: Abdulaziz bin Ibrahim Al Ibrahim 1342 AH",
+  "Emir: Abdullah bin Ibrahim Al-Askar 1342 - 1350 AH",
+  "Emir: Turki bin Ahmed Al-Sudairi 1352 - 1371 AH",
+  "Emir: Turki bin Mohammed bin Madi 1371 - 1385 AH",
+  "His Royal Highness Prince: Khalid bin Faisal bin Abdulaziz Al Saud 1391- 1428 AH",
+  "His Royal Highness Prince: Faisal bin Khalid bin Abdulaziz Al Saud 1428 - 1440 AH",
+  "His Royal Highness Prince: Turki bin Talal bin Abdulaziz Al Saud 1440 - present.",
+];
+
+export default function PrincePage() {
   const { isArabic } = useLanguage();
   const isMobile = useIsMobile();
-  const [currentImage, setCurrentImage] = useState(0);
-
-  if (!place) notFound();
-
-  const title = isArabic ? place.nameAr : place.nameEn;
-  const fullDesc = isArabic ? place.fullDescAr : place.fullDescEn;
-  const paragraphs = fullDesc.split("\n\n").filter(Boolean);
   const navbarH = isMobile ? 56 : 76;
 
-  useEffect(() => {
-    if (place.images.length <= 1) return;
-    const interval = setInterval(() => {
-      setCurrentImage((prev) => (prev + 1) % place.images.length);
-    }, 3500);
-    return () => clearInterval(interval);
-  }, [place.images.length]);
+  const quote = isArabic ? QUOTE_AR : QUOTE_EN;
+  const attribution = isArabic ? ATTRIBUTION_AR : ATTRIBUTION_EN;
+  const title = isArabic ? TITLE_AR : TITLE_EN;
+  const emirs = isArabic ? EMIRS_AR : EMIRS_EN;
 
-  /* ── MOBILE layout: image top, text bottom ── */
+  /* ── MOBILE layout: image top, text bottom (same as place page) ── */
   if (isMobile) {
     return (
       <>
         <div className="page-bg" />
         <Navbar />
 
-        {/* Back button */}
         <Link href="/" className="fixed z-50" style={{ top: navbarH + 12, right: "1rem" }}>
           <motion.div
             whileHover={{ scale: 1.05 }}
@@ -67,46 +90,18 @@ export default function PlacePage({ params }: PageProps) {
         </Link>
 
         <div style={{ paddingTop: navbarH, display: "flex", flexDirection: "column", minHeight: "100vh" }}>
-          {/* Image — top 45vh */}
           <div className="relative w-full overflow-hidden" style={{ height: "45vh", flexShrink: 0 }}>
-            <AnimatePresence mode="sync">
-              <motion.div
-                key={currentImage}
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                exit={{ opacity: 0 }}
-                transition={{ duration: 1.0 }}
-                className="absolute inset-0"
-              >
-                <Image src={place.images[currentImage]} alt={title} fill className="object-cover" sizes="100vw" priority={currentImage === 0} />
-              </motion.div>
-            </AnimatePresence>
-
-            {/* Counter */}
-            {place.images.length > 1 && (
-              <div
-                className="absolute bottom-4 left-4 z-10 font-heading font-bold rounded-full"
-                style={{ background: "rgba(201,168,76,0.95)", color: "#fff", fontSize: "0.85rem", padding: "0.3rem 0.8rem" }}
-              >
-                {currentImage + 1} / {place.images.length}
-              </div>
-            )}
-
-            {/* Dots */}
-            {place.images.length > 1 && (
-              <div className="absolute bottom-4 left-1/2 -translate-x-1/2 z-10 flex gap-2">
-                {place.images.map((_, i) => (
-                  <motion.div key={i} animate={{ opacity: i === currentImage ? 1 : 0.4, scale: i === currentImage ? 1.3 : 1 }}
-                    className="rounded-full" style={{ width: 6, height: 6, background: "var(--gold)" }} />
-                ))}
-              </div>
-            )}
-
-            {/* Fade to dark at bottom */}
+            <Image
+              src="/images/extras-3.png"
+              alt={attribution}
+              fill
+              className="object-cover object-center"
+              sizes="100vw"
+              priority
+            />
             <div className="absolute inset-x-0 bottom-0 h-16" style={{ background: "linear-gradient(to top, rgb(12,8,2), transparent)" }} />
           </div>
 
-          {/* Text section */}
           <div className="flex-1 overflow-y-auto" style={{ background: PANEL_BG, padding: "1.5rem" }}>
             <h1
               className="font-heading font-bold"
@@ -115,21 +110,25 @@ export default function PlacePage({ params }: PageProps) {
               {title}
             </h1>
 
-            <div className="space-y-3">
-              {paragraphs.map((para, i) => (
-                <p key={i} className="font-body text-sm leading-relaxed opacity-85"
-                  style={{ color: "var(--gold-light)", textAlign: isArabic ? "right" : "left" }}>
-                  {para}
-                </p>
-              ))}
+            <div className="whitespace-pre-line leading-relaxed mb-4" style={{ color: "var(--gold-light)", textAlign: isArabic ? "right" : "left", direction: isArabic ? "rtl" : "ltr" }}>
+              {quote}
             </div>
+            <p className="font-heading font-bold mb-4" style={{ color: "var(--gold)", fontSize: "1rem", textAlign: isArabic ? "right" : "left" }}>
+              — {attribution}
+            </p>
 
-            <div style={{ display: "flex", justifyContent: "center", marginTop: "2rem" }}>
-              <MapButton url={place.mapsUrl} />
+            <div className="pt-4 border-t" style={{ borderColor: "rgba(201,168,76,0.25)" }}>
+              <p className="font-heading font-bold mb-3" style={{ color: "var(--gold)", fontSize: "1rem", textAlign: isArabic ? "right" : "left" }}>
+                {isArabic ? "أمراء منطقة عسير" : "Emirs of the Asir Region"}
+              </p>
+              <ul className="space-y-2 opacity-90 text-sm" style={{ textAlign: isArabic ? "right" : "left", direction: isArabic ? "rtl" : "ltr" }}>
+                {emirs.map((line, i) => (
+                  <li key={i}>{line}</li>
+                ))}
+              </ul>
             </div>
           </div>
 
-          {/* Footer */}
           <footer
             className="text-center font-body flex flex-col items-center justify-center gap-1 shrink-0 py-3"
             style={{
@@ -151,13 +150,12 @@ export default function PlacePage({ params }: PageProps) {
     );
   }
 
-  /* ── DESKTOP layout: side-by-side with SVG curve ── */
+  /* ── DESKTOP layout: side-by-side with SVG curve (same as place page) ── */
   return (
     <>
       <div className="page-bg" />
       <Navbar />
 
-      {/* Back button — fixed top right */}
       <Link href="/" className="fixed z-50" style={{ top: navbarH + 16, right: "1.5rem" }}>
         <motion.div
           whileHover={{ scale: 1.05 }}
@@ -178,47 +176,25 @@ export default function PlacePage({ params }: PageProps) {
       </Link>
 
       <div style={{ display: "flex", flexDirection: "column", height: "100vh", paddingTop: navbarH }}>
-        {/* Main content row */}
         <div className="relative overflow-hidden" style={{ flex: 1, display: "flex", direction: "ltr" }}>
-
           {/* LEFT: Image section (60%) */}
           <div className="relative" style={{ width: "60%", flexShrink: 0 }}>
-            <AnimatePresence mode="sync">
-              <motion.div
-                key={currentImage}
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                exit={{ opacity: 0 }}
-                transition={{ duration: 1.2, ease: "easeInOut" }}
-                className="absolute inset-0"
-              >
-                <Image src={place.images[currentImage]} alt={title} fill className="object-cover" sizes="60vw" priority={currentImage === 0} />
-              </motion.div>
-            </AnimatePresence>
-
-            {place.images.length > 1 && (
-              <div className="absolute bottom-6 left-6 z-30 font-heading font-bold rounded-full"
-                style={{ background: "rgba(201,168,76,0.95)", color: "#ffffff", fontSize: "1rem", padding: "0.5rem 1.1rem", boxShadow: "0 4px 16px rgba(0,0,0,0.5)" }}>
-                {currentImage + 1} / {place.images.length}
-              </div>
-            )}
-
-            {place.images.length > 1 && (
-              <div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-30 flex gap-2">
-                {place.images.map((_, i) => (
-                  <motion.div key={i} animate={{ opacity: i === currentImage ? 1 : 0.35, scale: i === currentImage ? 1.3 : 1 }}
-                    className="rounded-full" style={{ width: 7, height: 7, background: "var(--gold)" }} />
-                ))}
-              </div>
-            )}
+            <Image
+              src="/images/extras-3.png"
+              alt={attribution}
+              fill
+              className="object-cover object-center"
+              sizes="60vw"
+              priority
+            />
           </div>
 
           {/* SVG curved separator */}
           <svg className="absolute inset-0 z-20 pointer-events-none" viewBox="0 0 100 100" preserveAspectRatio="none" style={{ width: "100%", height: "100%" }}>
-            <path d="M 58 0 C 65 55, 52 80, 46 100 L 100 100 L 100 0 Z" fill={PANEL_BG} />
+          <path d="M 58 0 C 65 55, 52 80, 46 100 L 100 100 L 100 0 Z" fill={PANEL_BG} />
           </svg>
 
-          {/* RIGHT: Text panel (35%) */}
+          {/* RIGHT: Text panel */}
           <div className="relative z-30 flex flex-col justify-center overflow-y-auto" style={{ flex: 1, background: PANEL_BG, padding: "2rem 2.5rem 1.5rem 3.5rem" }}>
             <motion.h1
               initial={{ opacity: 0, y: 30 }}
@@ -235,28 +211,33 @@ export default function PlacePage({ params }: PageProps) {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.15 }}
               className="space-y-3"
+              style={{ color: "var(--gold-light)", textAlign: isArabic ? "right" : "left", direction: isArabic ? "rtl" : "ltr" }}
             >
-              {paragraphs.map((para, i) => (
-                <p key={i} className="font-body text-sm leading-[1.9] opacity-85"
-                  style={{ color: "var(--gold-light)", textAlign: isArabic ? "right" : "left" }}>
-                  {para}
-                </p>
-              ))}
+              <div className="whitespace-pre-line leading-[1.9] text-sm opacity-90">{quote}</div>
+              <p className="font-heading font-bold pt-1" style={{ color: "var(--gold)" }}>
+                — {attribution}
+              </p>
             </motion.div>
 
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.3 }}
-              className="flex flex-wrap gap-4"
-              style={{ marginTop: "2.5rem", justifyContent: isArabic ? "flex-end" : "flex-start" }}
+              className="pt-6 mt-4 border-t"
+              style={{ borderColor: "rgba(201,168,76,0.25)", textAlign: isArabic ? "right" : "left", direction: isArabic ? "rtl" : "ltr" }}
             >
-              <MapButton url={place.mapsUrl} />
+              <p className="font-heading font-bold mb-3" style={{ color: "var(--gold)", fontSize: "1.125rem" }}>
+                {isArabic ? "أمراء منطقة عسير" : "Emirs of the Asir Region"}
+              </p>
+              <ul className="space-y-2 text-sm opacity-90 leading-relaxed">
+                {emirs.map((line, i) => (
+                  <li key={i}>{line}</li>
+                ))}
+              </ul>
             </motion.div>
           </div>
         </div>
 
-        {/* Footer */}
         <footer
           className="relative z-10 text-center px-4 font-body flex flex-col items-center justify-center gap-2 py-4"
           style={{

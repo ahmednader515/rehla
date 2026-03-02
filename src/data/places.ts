@@ -39,8 +39,8 @@ Ahad Rafidah Governorate comprises three centers: Al-Wadiain, Shaaf Jarmah, and 
   },
   {
     slug: "shaaf-lajwan-museum",
-    nameAr: "متحف شعف لجوان",
-    nameEn: "Shaaf Lajwan Museum",
+    nameAr: "موقع شعف لجوان",
+    nameEn: "Shaaf Lajwan Site",
     shortDescAr:
       "متحف قبيلة لجوان التراثي الذي يضم أكثر من 10,000 قطعة أثرية يعود بعضها إلى عام 1305هـ، افتُتح بحضور أمير منطقة عسير.",
     shortDescEn:
@@ -70,7 +70,7 @@ The museum also features several classic heritage cars and a traditional majlis 
       "/images/Shaaf-Lajwan-Museum-12.png",
     ],
     mapsUrl:
-      "https://www.google.com/maps/place/%D9%85%D9%88%D9%82%D8%B9+%D8%AC%D8%B1%D8%B4+%D8%A7%D9%84%D8%A3%D8%AB%D8%B1%D9%8A%D8%8C+2650+%D8%AC%D8%B1%D8%B4+%D8%A7%D9%84%D8%A7%D8%AB%D8%B1%D9%8A+2%D8%8C+%D8%AD%D9%8A+%D8%AC%D8%B1%D8%B4+%D8%A7%D9%84%D8%A7%D8%AB%D8%B1%D9%8A%D8%8C+AKDA8795%E2%80%AD/@18.2040554,42.8224795,15z",
+      "https://www.google.com/maps/place/Palace+Joan+celebrations,+AGSA4898,+4898+%D9%88%D8%A7%D8%AF%D9%89+%D8%B2%D9%8A%D8%AF+10,+6411,+%D8%A2%D9%84+%D8%AF%D9%84%D9%87%D9%85+62275/@18.054975,42.9538646,16z",
   },
   {
     slug: "mount-hammouma",
@@ -102,8 +102,8 @@ On Mount Hamumah, several rock inscriptions were found, along with the foundatio
   },
   {
     slug: "ancient-city-of-jarash",
-    nameAr: "مدينة جُرَش الأثرية",
-    nameEn: "The Ancient City of Jarash",
+    nameAr: "موقع جرش الأثرية",
+    nameEn: "Jarash Archaeological Site",
     shortDescAr:
       "مدينة أثرية تاريخية تقع في محافظة أحد رفيدة، كانت محطةً رئيسية على طريق التجارة القديم وملتقى القوافل بين جنوب الجزيرة العربية وشمالها.",
     shortDescEn:
@@ -129,7 +129,7 @@ Archaeologists have noted that the construction style of the Jorash archaeologic
       "/images/The-ancient-city-of-Jarash-4.png",
     ],
     mapsUrl:
-      "https://www.google.com/maps/place/4XQV%2BXPW+%D9%82%D8%B5%D8%B1+%D8%A7%D9%84%D8%B1%D9%85%D9%8A%D8%AD+%D8%A7%D9%84%D8%AA%D8%B1%D8%A7%D8%AB%D9%8A+%D8%A8%D8%AC%D9%88%D9%81+%D8%A2%D9%84+%D8%A7%D9%84%D8%B4%D9%88%D8%A7%D8%B7",
+      "https://www.google.com/maps/place/%D9%85%D9%88%D9%82%D8%B9+%D8%AC%D8%B1%D8%B4+%D8%A7%D9%84%D8%A3%D8%AB%D8%B1%D9%8A%D8%8C+2650+%D8%AC%D8%B1%D8%B4+%D8%A7%D9%84%D8%A7%D8%AB%D8%B1%D9%8A+2%D8%8C+%D8%AD%D9%8A+%D8%AC%D8%B1%D8%B4+%D8%A7%D9%84%D8%A7%D8%AB%D8%B1%D9%8A%D8%8C+AKDA8795%D8%8C+8795%D8%8C+%D8%A3%D8%AD%D8%AF+%D8%B1%D9%81%D9%8A%D8%AF%D8%A9+62421/@18.2040554,42.8224795,15z",
   },
   {
     slug: "house-of-culture",
@@ -268,8 +268,8 @@ Beyond commerce, the market serves as a social gathering place where people reco
   },
   {
     slug: "ahad-rafidah-market",
-    nameAr: "سوق أحد رفيدة الشعبي",
-    nameEn: "The Ahad Rafidah Market",
+    nameAr: "موقع سوق أحد رفيدة القديم وقصور الشيخ حسين بن صمان",
+    nameEn: "Old Ahad Rafidah Market and Sheikh Hussein bin Samman Palaces",
     shortDescAr:
       "سوق شعبي عريق في محافظة أحد رفيدة لا يزال قائماً بمبانيه التراثية القديمة، يجمع المنتجات الزراعية والمواشي والسلع التقليدية العسيرية.",
     shortDescEn:
@@ -291,6 +291,29 @@ In the historic palaces of Sheikh Hussein bin Samman, vendors from all over woul
       "/images/The-Ahad-Rafidah-market-4.png",
     ],
     mapsUrl:
-      "https://www.google.com/maps/place/%D8%B3%D9%88%D9%82+%D8%A3%D8%AD%D8%AF+%D8%B1%D9%81%D9%8A%D8%AF%D8%A9+%D8%A7%D9%84%D8%B4%D8%B9%D8%A8%D9%8A+%D8%A7%D9%84%D9%82%D8%AF%D9%8A%D9%85",
+      "https://www.google.com/maps/place/%D9%82%D8%B5%D9%88%D8%B1+%D8%A7%D9%84%D8%B4%D9%8A%D8%AE+%D8%AD%D8%B3%D9%8A%D9%86+%D8%A8%D9%86+%D8%B5%D9%85%D8%A7%D9%86+%D8%A7%D9%84%D8%B1%D9%81%D9%8A%D8%AF%D9%8A+%D8%B1%D8%AD%D9%85%D9%87+%D8%A7%D9%84%D9%84%D9%87%D8%8C+%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%D8%A9%D8%8C+6831+%D8%AC%D9%86%D9%88%D8%A8%D8%A7+%D8%A7%D9%84%D9%89+%D8%A7%D8%AD%D8%AF+%D8%B1%D9%81%D9%8A%D8%AF%D9%87+%D9%88+%D8%B4%D9%85%D8%A7%D9%84%D8%A7+%D8%A7%D9%84%D9%89+%D8%AE%D9%85%D9%8A%D8%B3+%D9%85%D8%B4%D9%8A%D8%B7%D8%8C+3000,+Ahad+Rafidah+62421/@18.171083,42.8386142,16z",
+  },
+  {
+    slug: "anqara-resort",
+    nameAr: "منتجع قرية عنقرة السياحي",
+    nameEn: "Anqara Village Resort",
+    shortDescAr:
+      "منتجع سياحي في محافظة أحد رفيدة بمساحة أربعين ألف متر، يضم مجالس وبنايات تراثية قديمة وأكثر من 115 غرفة وأكواخ مطلة على مزارع السمك والفراولة والبن.",
+    shortDescEn:
+      "A tourist resort in Ahad Rafidah spanning 40,000 square meters, featuring heritage buildings, over 115 rooms and cabins overlooking fish, strawberry and coffee farms.",
+    fullDescAr: `منتجع قرية عنقرة السياحي:
+يقع في محافظة أحد رفيدة بمنطقة عسير بمساحة تبلغ أربعون ألف متر ويوجد في المنتجع تنوع في المزارع، مثل المجالس التراثية القديمة، والبناية التراثية القديمة بالطين وهو ما يميز الموقع عن غيره في المنطقة، بالإضافة إلى تنوع في الجلسات الخارجية ويوجد فيه أكثر من مائة وخمسة عشر غرفة خاصة، أكواخ مطلة على مزارع السمك ومزارع الفراولة ومزارع البن بالإضافة إلى تنوع في الحياة البيئية حيث يضم الموقع ممراً مائياً للطيور وموقعاً للأسماك، وكذلك يضم المنتجع ساحة جميلة وأشجار الورد والنخيل التي يتوسطها ممر مائي، ويتميز المنتجع بجوّه الجميل والهواء العليل والضباب الذي يعكس تجربة مميزة لزوار المنتجع والسياح، بالإضافة إلى الطابع التراثي الأصيل الذي يميز الموقع ويجعله وجهة مميزة وفريدة.`,
+    fullDescEn: `Anqara Village Resort:
+Located in Ahad Rafidah Governorate in the Asir region, the resort spans 40,000 square meters and offers a variety of attractions, including traditional heritage majlis and historic mud-brick buildings that distinguish the site in the region. It also features diverse outdoor seating areas and over 115 private rooms, as well as cabins overlooking fish farms, strawberry farms, and coffee farms. The resort boasts rich biodiversity with a water corridor for birds and a fish site, a beautiful courtyard with rose and palm trees and a central water path. The resort is known for its pleasant climate, gentle breeze, and mist, offering a distinctive experience for visitors and tourists, along with an authentic heritage character that makes it a unique and special destination.`,
+    images: [
+      "/images/anqara-1.png",
+      "/images/anqara-2.png",
+      "/images/anqara-3.png",
+      "/images/anqara-4.png",
+      "/images/anqara-5.png",
+      "/images/anqara-6.png",
+    ],
+    mapsUrl:
+      "https://www.google.com/maps/place/3VGX%2B966+%D9%85%D9%86%D8%AA%D8%AC%D8%B9+%D9%82%D8%B1%D9%8A%D8%A9+%D8%B9%D9%86%D9%82%D8%B1%D8%A9%D8%8C+%D8%A7%D8%AD%D8%AF+%D8%B1%D9%81%D9%8A%D8%AF%D8%A9+(%D9%82%D8%B1%D9%8A%D8%A9%D8%8C+'Anqarah+62277/@18.0759222,42.8980111,16z",
   },
 ];

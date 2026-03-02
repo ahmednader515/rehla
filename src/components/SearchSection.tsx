@@ -115,6 +115,17 @@ export default function SearchSection({ onSearch }: SearchSectionProps) {
         className="relative w-full"
         style={{ zIndex: 1 }}
       >
+        <p
+          className="font-body font-medium leading-tight"
+          style={{
+            color: "#ffffff",
+            marginTop: 0,
+            marginBottom: "0.5rem",
+            fontSize: isMobile ? "1rem" : "1.35rem",
+          }}
+        >
+          {isArabic ? "بسم الله نبدى وبه نستعين" : "In the name of God we begin and in Him we seek help"}
+        </p>
         <h1
           className="font-heading font-bold leading-tight"
           style={{
@@ -124,7 +135,7 @@ export default function SearchSection({ onSearch }: SearchSectionProps) {
             fontSize: isMobile ? "2.5rem" : "4.5rem",
           }}
         >
-          {isArabic ? "رحلة في تراث عسير" : "A Journey Through Asir Heritage"}
+          {isArabic ? "رحله في تراث عسير" : "A Journey Through Asir Heritage"}
         </h1>
 
         <p
