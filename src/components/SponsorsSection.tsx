@@ -65,7 +65,7 @@ export default function SponsorsSection() {
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.15 }}
         >
-          <div className="relative w-full max-w-md aspect-[3/2] rounded-xl overflow-hidden" style={{ border: "1px solid rgba(201,168,76,0.25)", boxShadow: "0 4px 24px rgba(0,0,0,0.3)" }}>
+          <div className="relative w-full max-w-md aspect-[3/2] rounded-xl overflow-hidden" style={{ background: "#fff", border: "1px solid rgba(201,168,76,0.25)", boxShadow: "0 4px 24px rgba(0,0,0,0.3)" }}>
             <Image
               src="/images/advertise-1.png"
               alt={isArabic ? "راعي ١" : "Sponsor 1"}
@@ -74,7 +74,7 @@ export default function SponsorsSection() {
               sizes="(max-width: 768px) 95vw, 400px"
             />
           </div>
-          <div className="relative w-full max-w-md aspect-[3/2] rounded-xl overflow-hidden" style={{ border: "1px solid rgba(201,168,76,0.25)", boxShadow: "0 4px 24px rgba(0,0,0,0.3)" }}>
+          <div className="relative w-full max-w-md aspect-[3/2] rounded-xl overflow-hidden" style={{ background: "#fff", border: "1px solid rgba(201,168,76,0.25)", boxShadow: "0 4px 24px rgba(0,0,0,0.3)" }}>
             <Image
               src="/images/advertise-2.png"
               alt={isArabic ? "راعي ٢" : "Sponsor 2"}
