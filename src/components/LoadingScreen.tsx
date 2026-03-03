@@ -38,7 +38,7 @@ export default function LoadingScreen() {
           >
             <Image
               src="/images/logo.png"
-              alt="رحله"
+              alt="رحلة"
               width={68}
               height={76}
               className="object-contain drop-shadow-lg"

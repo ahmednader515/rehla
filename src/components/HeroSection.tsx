@@ -26,7 +26,7 @@ export default function HeroSection() {
           className="font-heading text-5xl md:text-7xl font-bold mb-4 leading-tight"
           style={{ color: "var(--gold)" }}
         >
-          {isArabic ? "رحله في تراث عسير" : "A Journey Through Asir Heritage"}
+          {isArabic ? "رحلة في تراث عسير" : "A Journey Through Asir Heritage"}
         </h1>
         <p
           className="font-heading text-xl md:text-2xl opacity-80 mb-2"
@@ -68,7 +68,7 @@ export default function HeroSection() {
           <div className="relative w-full md:w-2/3 min-h-[220px]">
             <Image
               src="/images/extras-1.png"
-              alt={isArabic ? "رحله صعود عسير" : "Asir Rise Journey"}
+              alt={isArabic ? "رحلة صعود عسير" : "Asir Rise Journey"}
               fill
               className="object-cover"
               sizes="(max-width: 768px) 100vw, 66vw"

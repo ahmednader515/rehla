@@ -54,8 +54,8 @@ export default function HomePage() {
       >
         <span>
           {isArabic
-            ? "© 2025 رحله في تراث عسير — محافظة أحد رفيدة"
-            : "© 2025 A Journey Through Asir Heritage — Ahad Rafidah Governorate"}
+            ? "© 2026 رحلة في تراث عسير — محافظة أحد رفيدة"
+            : "© 2026 A Journey Through Asir Heritage — Ahad Rafidah Governorate"}
         </span>
         <span style={{ opacity: 0.9 }}>
           {isArabic ? "بيانات التواصل :" : "Contact:"} {isArabic ? "رقم :" : "Phone:"} 0544443194 · {isArabic ? "تيك توك - تويتر :" : "TikTok - Twitter:"} ASEER_KKU

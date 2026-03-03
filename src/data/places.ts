@@ -39,7 +39,7 @@ Ahad Rafidah Governorate comprises three centers: Al-Wadiain, Shaaf Jarmah, and 
   },
   {
     slug: "shaaf-lajwan-museum",
-    nameAr: "موقع شعف لجوان",
+    nameAr: "متحف شعف لجوان",
     nameEn: "Shaaf Lajwan Site",
     shortDescAr:
       "متحف قبيلة لجوان التراثي الذي يضم أكثر من 10,000 قطعة أثرية يعود بعضها إلى عام 1305هـ، افتُتح بحضور أمير منطقة عسير.",
@@ -102,7 +102,7 @@ On Mount Hamumah, several rock inscriptions were found, along with the foundatio
   },
   {
     slug: "ancient-city-of-jarash",
-    nameAr: "موقع جرش الأثرية",
+    nameAr: "مدينة جرش الأثرية",
     nameEn: "Jarash Archaeological Site",
     shortDescAr:
       "مدينة أثرية تاريخية تقع في محافظة أحد رفيدة، كانت محطةً رئيسية على طريق التجارة القديم وملتقى القوافل بين جنوب الجزيرة العربية وشمالها.",

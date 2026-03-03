@@ -74,7 +74,7 @@ export default function ExtrasSection() {
           >
             <Image
               src="/images/extras-1.png"
-              alt={isArabic ? "رحله صعود عسير" : "Asir Rise Journey"}
+              alt={isArabic ? "رحلة صعود عسير" : "Asir Rise Journey"}
               fill
               className="object-cover"
               sizes="(max-width: 768px) 100vw, 50vw"

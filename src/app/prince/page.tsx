@@ -140,7 +140,7 @@ export default function PrincePage() {
               minHeight: "44px",
             }}
           >
-            <span>{isArabic ? "© 2025 رحله في تراث عسير — محافظة أحد رفيدة" : "© 2025 A Journey Through Asir Heritage — Ahad Rafidah Governorate"}</span>
+            <span>{isArabic ? "© 2026 رحلة في تراث عسير — محافظة أحد رفيدة" : "© 2026 A Journey Through Asir Heritage — Ahad Rafidah Governorate"}</span>
             <span style={{ opacity: 0.9 }}>
               {isArabic ? "بيانات التواصل :" : "Contact:"} {isArabic ? "رقم :" : "Phone:"} 0544443194 · {isArabic ? "تيك توك - تويتر :" : "TikTok - Twitter:"} ASEER_KKU
             </span>
@@ -250,7 +250,7 @@ export default function PrincePage() {
             background: PANEL_BG,
           }}
         >
-          <span>{isArabic ? "© 2025 رحله في تراث عسير — محافظة أحد رفيدة" : "© 2025 A Journey Through Asir Heritage — Ahad Rafidah Governorate"}</span>
+          <span>{isArabic ? "© 2026 رحلة في تراث عسير — محافظة أحد رفيدة" : "© 2026 A Journey Through Asir Heritage — Ahad Rafidah Governorate"}</span>
           <span style={{ opacity: 0.9 }}>
             {isArabic ? "بيانات التواصل :" : "Contact:"} {isArabic ? "رقم :" : "Phone:"} 0544443194 · {isArabic ? "تيك توك - تويتر :" : "TikTok - Twitter:"} ASEER_KKU
           </span>

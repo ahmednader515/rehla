@@ -17,6 +17,7 @@ export default function SearchSection({ onSearch }: SearchSectionProps) {
   const isMobile = useIsMobile();
   const [query, setQuery] = useState("");
   const [showSuggestions, setShowSuggestions] = useState(false);
+  const [visitorCount, setVisitorCount] = useState<number | null>(null);
   const containerRef = useRef<HTMLDivElement>(null);
   const router = useRouter();
 
@@ -57,6 +58,19 @@ export default function SearchSection({ onSearch }: SearchSectionProps) {
     };
     document.addEventListener("mousedown", handler);
     return () => document.removeEventListener("mousedown", handler);
+  }, []);
+
+  useEffect(() => {
+    let cancelled = false;
+    fetch("/api/visitors")
+      .then((res) => res.json())
+      .then((data) => {
+        if (!cancelled && typeof data?.count === "number") setVisitorCount(data.count);
+      })
+      .catch(() => {
+        if (!cancelled) setVisitorCount(null);
+      });
+    return () => { cancelled = true; };
   }, []);
 
   const btnSize = isMobile ? 48 : 72;
@@ -135,7 +149,7 @@ export default function SearchSection({ onSearch }: SearchSectionProps) {
             fontSize: isMobile ? "2.5rem" : "4.5rem",
           }}
         >
-          {isArabic ? "رحله في تراث عسير" : "A Journey Through Asir Heritage"}
+          {isArabic ? "رحلة في تراث عسير" : "A Journey Through Asir Heritage"}
         </h1>
 
         <p
@@ -284,6 +298,24 @@ export default function SearchSection({ onSearch }: SearchSectionProps) {
             )}
           </AnimatePresence>
         </motion.div>
+
+        {/* Visitor count (total website visitors from API) */}
+        {visitorCount !== null && visitorCount >= 0 && (
+          <motion.p
+            className="font-body"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.6 }}
+            style={{
+              color: "rgba(255,255,255,0.85)",
+              fontSize: isMobile ? "0.8rem" : "0.95rem",
+              marginTop: "0.5rem",
+              marginBottom: 0,
+            }}
+          >
+            {isArabic ? `عدد زوار الموقع: ${visitorCount.toLocaleString("ar-SA")}` : `Website visitors: ${visitorCount.toLocaleString("en")}`}
+          </motion.p>
+        )}
       </motion.div>
 
       {/* Scroll indicator — hide on mobile */}

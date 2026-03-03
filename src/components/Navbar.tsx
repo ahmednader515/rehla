@@ -25,7 +25,7 @@ export default function Navbar() {
         <Link href="/" className="flex items-center gap-2 select-none">
           <Image
             src="/images/logo.png"
-            alt="رحله"
+            alt="رحلة"
             width={isMobile ? 36 : 48}
             height={isMobile ? 40 : 54}
             className="object-contain drop-shadow-lg"
@@ -40,7 +40,7 @@ export default function Navbar() {
             style={{ color: "var(--gold-light)" }}
           >
             {isArabic
-              ? "رحله في تراث عسير عبر التقنية"
+              ? "رحلة في تراث عسير عبر التقنية"
               : "A Journey Through Asir Heritage via Technology"}
           </p>
         </div>
