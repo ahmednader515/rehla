@@ -316,4 +316,35 @@ Located in Ahad Rafidah Governorate in the Asir region, the resort spans 40,000 
     mapsUrl:
       "https://www.google.com/maps/place/3VGX%2B966+%D9%85%D9%86%D8%AA%D8%AC%D8%B9+%D9%82%D8%B1%D9%8A%D8%A9+%D8%B9%D9%86%D9%82%D8%B1%D8%A9%D8%8C+%D8%A7%D8%AD%D8%AF+%D8%B1%D9%81%D9%8A%D8%AF%D8%A9+(%D9%82%D8%B1%D9%8A%D8%A9%D8%8C+'Anqarah+62277/@18.0759222,42.8980111,16z",
   },
+  {
+    slug: "saad-mashhor-museum",
+    nameAr: "متحف سعد بن مشهور التراثي",
+    nameEn: "Saad bin Mashhor Heritage Museum",
+    shortDescAr:
+      "متحف تراثي يضم أكثر من 10,000 قطعة على مساحة تقارب 1000 م²، من مقتنيات نادرة يتجاوز عمر بعضها 400 عام، مع فناء خارجي ومسرح للفعاليات.",
+    shortDescEn:
+      "A heritage museum housing over 10,000 pieces across nearly 1,000 m², from rare items over 400 years old to late-nineties pieces, with an outdoor courtyard and event theater.",
+    fullDescAr: `متحف سعد بن مشهور التراثي
+
+قصة شغف بدأت بهواية وحب عميق للتراث، وبسنوات من البحث والاقتناء وجمع الكنوز النادرة على مدى أكثر من 12 عاماً. هذا الشغف تحوّل إلى صرح ثقافي نابض بالحياة، تُوِّج بافتتاح المتحف في شهر رمضان من عام 1446هـ.
+
+يضم المتحف أكثر من 10,000 قطعة تراثية موزعة على مساحة تقارب 1000 متر مربع، في رحلة زمنية فريدة تمتد عبر الأجيال؛ من مقتنيات نادرة يتجاوز عمر بعضها 400 عام، وصولاً إلى قطع تعود إلى نهاية التسعينات، لتجسد ذاكرة الماضي وتفاصيله الأصيلة.
+
+ولا يقتصر تميز المتحف على مقتنياته فحسب، بل يحتضن أيضاً فناءً خارجياً ومسرحاً مهيأً لاستضافة الفعاليات والاحتفالات، ليكون وجهة ثقافية وتراثية تجمع بين عبق التاريخ وروح الحاضر.`,
+    fullDescEn: `Saad bin Mashhor Heritage Museum
+
+A story of passion that began with a hobby and a deep love for heritage, through years of research, collecting, and gathering rare treasures over more than 12 years. This passion grew into a living cultural landmark, crowned by the museum’s opening in Ramadan 1446 AH.
+
+The museum houses over 10,000 heritage pieces spread across nearly 1,000 square meters, in a unique journey through time and generations—from rare items over 400 years old to pieces from the late nineties—embodying the memory and authentic details of the past.
+
+The museum’s distinction is not limited to its collection; it also includes an outdoor courtyard and a theater ready to host events and celebrations, making it a cultural and heritage destination that blends the fragrance of history with the spirit of the present.`,
+    images: [
+      "/images/saad-mashhor-1.png",
+      "/images/saad-mashhor-2.png",
+      "/images/saad-mashhor-3.png",
+      "/images/saad-mashhor-4.png",
+    ],
+    mapsUrl:
+      "https://www.google.com/maps/search/%D9%85%D8%AA%D8%AD%D9%81+%D8%B3%D8%B9%D8%AF+%D8%A8%D9%86+%D9%85%D8%B4%D9%87%D9%88%D8%B1+%D8%A7%D9%84%D8%AA%D8%B1%D8%A7%D8%AB%D9%8A+%D8%A3%D8%AD%D8%AF+%D8%B1%D9%81%D9%8A%D8%AF%D8%A9",
+  },
 ];
