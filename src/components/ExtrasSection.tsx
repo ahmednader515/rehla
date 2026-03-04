@@ -182,7 +182,7 @@ export default function ExtrasSection() {
               {isArabic ? "عدد محافظات منطقة عسير" : "Number of governorates in Asir"}
             </p>
             <p className="font-heading font-bold" style={{ color: "var(--gold)", fontSize: isMobile ? "1.15rem" : "1.35rem" }}>
-              19 {isArabic ? "محافظة" : "governorates"}
+              18 {isArabic ? "محافظة" : "governorates"}
             </p>
           </div>
           <div>
