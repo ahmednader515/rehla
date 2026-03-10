@@ -39,8 +39,8 @@ Ahad Rafidah Governorate comprises three centers: Al-Wadiain, Shaaf Jarmah, and 
   },
   {
     slug: "shaaf-lajwan-museum",
-    nameAr: "متحف شعف لجوان",
-    nameEn: "Shaaf Lajwan Site",
+    nameAr: "متحف قبيلة لجوان التراثي",
+    nameEn: "Lajwan Tribe Heritage Museum",
     shortDescAr:
       "متحف قبيلة لجوان التراثي الذي يضم أكثر من 10,000 قطعة أثرية يعود بعضها إلى عام 1305هـ، افتُتح بحضور أمير منطقة عسير.",
     shortDescEn:
@@ -74,24 +74,14 @@ The museum also features several classic heritage cars and a traditional majlis 
   },
   {
     slug: "mount-hammouma",
-    nameAr: "نقوش جبل حمومة",
-    nameEn: "Mount Hammouma Inscriptions",
+    nameAr: "جبل حمومة",
+    nameEn: "Mount Hammouma",
     shortDescAr:
-      "جبل يبلغ ارتفاعه 80 متراً، يحتوي على نقوش أثرية قديمة وكهف عسل عمره ثلاثة آلاف سنة، ويُعدّ حاجزاً طبيعياً ومركزاً للمراقبة.",
+      "جبل يبلغ ارتفاعه 80 متراً قرب جرش، حاجز طبيعي ومركز للمراقبة، ويضم شواهد أثرية تعود إلى عصور ما قبل الميلاد.",
     shortDescEn:
-      "An 80-meter-high mountain containing ancient rock inscriptions and a cave with 3,000-year-old honey, once a natural barrier and watchtower for Jarash.",
-    fullDescAr: `يعد جبل حمومة أحد أشهر المعالم الطبيعية القريبة من جرش، ويبعد عنها قرابة كيلومتر واحد فقط باتجاه الشرق، ويبلغ ارتفاعه (80 م) عن سطح الأرض.
-
-كان جزءاً لا يتجزأ من تاريخ جُرَش، لكونه حاجزاً طبيعياً، ومركزاً للمراقبة والحراسة، فضلاً عن احتوائه على العديد من الشواهد الأثرية التي يعود بعضها إلى عصور ما قبل الميلاد.
-
-كما تم العثور فيه على كهف يحتوي على عسل قديم تم تقدير عمره بما يقارب ثلاثة آلاف سنة، بالإضافة إلى نقوش أثرية قديمة على صخور الجبل تعكس العمق التاريخي لمدينة جرش الأثرية.
-
-عُثر في جبل حمومة على عدد من الكتابات الصخرية، بالإضافة إلى أساسات لمبنى يحتوي على ثلاثة غرف، تنتشر حوله اللقى الفخارية، والقطع المزججة. ورجّح الآثاريون بأن المبنى كان معبداً، حيث عثر على بقايا مواد سائلة كالعسل والسمن قبل الإسلام.`,
-    fullDescEn: `Mount Hammouma is one of the most famous natural landmarks near Jerash, located about one kilometer east of it. It is 80 meters high above the ground and was an integral part of Jerash's history, as it was a natural barrier and a center for observation and guarding.
-
-It also contains many archaeological evidence, some of which date back to pre-Christian times. A cave containing ancient honey, estimated to be about three thousand years old, was also found there, in addition to ancient archaeological inscriptions on the mountain's rocks that reflect the historical depth of the ancient city of Jerash.
-
-On Mount Hamumah, several rock inscriptions were found, along with the foundations of a building with three rooms. The area around it was littered with pottery fragments and glazed pieces. Archaeologists believe that the building was a temple, as remnants of liquid materials such as honey and clarified butter were discovered, dating back to pre-Islamic times.`,
+      "An 80-meter-high mountain near Jarash, a natural barrier and watchtower with archaeological remains dating to pre-Christian eras.",
+    fullDescAr: `يعد جبل حمومة أحد أشهر المعالم الطبيعية القريبة من جرش، ويبعد عنها قرابة كيلومتر واحد فقط باتجاه الشرق، ويبلغ ارتفاعه (80 م) عن سطح الأرض، وكان جزءاً لا يتجزأ من تاريخ جُرَش، لكونه حاجزًا طبيعيًا، ومركزًا للمراقبة والحراسة، فضلاً عن احتوائه على العديد من الشواهد الأثرية التي يعود بعضها إلى عصور ما قبل الميلاد.`,
+    fullDescEn: `Mount Hammouma is a prominent natural feature near Jorash, located approximately one kilometre to the east. Rising 80 meters above the surrounding land, it has played a significant role in Jorash's history as a natural barrier and a watchtower. Additionally, it contains several archaeological remains, some of which date back to pre-Christian eras.`,
     images: [
       "/images/Mount-Hammouma-1.png",
       "/images/Mount-Hammouma-2.png",
@@ -102,8 +92,8 @@ On Mount Hamumah, several rock inscriptions were found, along with the foundatio
   },
   {
     slug: "ancient-city-of-jarash",
-    nameAr: "مدينة جرش الأثرية",
-    nameEn: "Jarash Archaeological Site",
+    nameAr: "مدينة جُرَش الأثرية",
+    nameEn: "The Ancient City of Jarash",
     shortDescAr:
       "مدينة أثرية تاريخية تقع في محافظة أحد رفيدة، كانت محطةً رئيسية على طريق التجارة القديم وملتقى القوافل بين جنوب الجزيرة العربية وشمالها.",
     shortDescEn:
@@ -133,8 +123,8 @@ Archaeologists have noted that the construction style of the Jorash archaeologic
   },
   {
     slug: "house-of-culture",
-    nameAr: "بيت الثقافة - أحد رفيدة",
-    nameEn: "House of Culture - Ahad Rafidah",
+    nameAr: "بيت الثقافة مكتبة أحد رفيدة العامة",
+    nameEn: "House of Culture - Ahad Rafidah Public Library",
     shortDescAr:
       "مكتبة عامة حديثة تمتد على مساحة 3,256 متراً مربعاً من دورين، تقدم خدمات ثقافية وتعليمية وورش عمل لجميع الفئات العمرية.",
     shortDescEn:
@@ -217,47 +207,37 @@ The village is a prominent heritage landmark in the governorate, reflecting the 
   },
   {
     slug: "al-alrumaih-museum",
-    nameAr: "متحف آل الرميح",
-    nameEn: "Al Alrumaih Museum",
+    nameAr: "قصر ومتحف الرميح التراثي",
+    nameEn: "Al Rumaih Heritage Palace and Museum",
     shortDescAr:
-      "متحف تراثي خاص بارز في عسير يجسّد نموذجاً حياً للبيئة القديمة عبر معروضاته من الأدوات المنزلية والأسلحة والعملات والمخطوطات والأزياء الشعبية.",
+      "قصر ومتحف تراثي بارز في عسير يضم أكثر من خمسة آلاف قطعة تراثية، ويتميّز بطابعه المعماري التقليدي والاحتفالات الوطنية.",
     shortDescEn:
-      "A prominent private heritage museum in Asir presenting a vivid model of traditional life through household tools, weapons, coins, manuscripts, and folk costumes.",
-    fullDescAr: `يُعدّ متحف آل الرميح من أبرز المتاحف التراثية الخاصة في منطقة عسير، ويتميّز بطابعه المعماري التقليدي الذي يعكس هوية البناء الجنوبي القديم من حيث استخدام الحجر والأخشاب والزخارف المحلية.
-
-يضم المتحف أقساماً متعددة تحتوي على أدوات منزلية قديمة كانت تُستخدم في الطهي وإعداد القهوة وحفظ المؤن، إضافة إلى أدوات الزراعة والرعي التي تعبّر عن طبيعة الحياة الريفية في المنطقة. كما يحتوي على مجموعة من الأسلحة التقليدية، والعملات القديمة، والوثائق التاريخية، والمخطوطات، إلى جانب الأزياء الشعبية والحُليّ.
-
-ويحرص المتحف على إبراز العادات والتقاليد المرتبطة بالمناسبات الاجتماعية، مثل الزواج والأعياد وطقوس الضيافة. ويؤدي المتحف دوراً مهماً في حفظ الموروث الشعبي وتعزيز الهوية الوطنية، من خلال استقبال الوفود المدرسية والمهتمين بالتراث والسياح.`,
-    fullDescEn: `Al Alrumaih Museum is one of the most prominent private heritage museums in the Asir Region. It is distinguished by its traditional architectural style, reflecting the identity of old southern construction through the use of stone, wood, and local decorative elements.
-
-The museum includes several sections featuring old household tools once used for cooking, coffee preparation, and food storage, as well as agricultural and herding tools that reflect the rural lifestyle of the region. It also houses a collection of traditional weapons, old coins, historical documents, manuscripts, traditional clothing, and jewelry.
-
-The museum highlights customs and traditions associated with social occasions such as weddings, religious festivals, and hospitality rituals. It plays an important role in preserving folk heritage and strengthening national identity by welcoming school groups, heritage enthusiasts, and tourists, providing detailed explanations of the displayed items and their historical significance.`,
+      "A prominent heritage palace and museum in Asir with over 5,000 heritage pieces, traditional architecture, and a role in national celebrations.",
+    fullDescAr: `يُعدّ قصر ومتحف الرميح التراثي من أبرز القصور والمتاحف الأثرية والتراثية الخاصة في منطقة عسير، ويتميّز بطابعه المعماري التقليدي الذي يعكس هوية البناء الجنوبي القديم من حيث استخدام اللبن والحجر والأخشاب والزخارف المحلية.
+والمتحف يحتوي على أكثر من خمسة آلاف قطعة تراثية قديمة كانت تُستخدم في الطهي وإعداد القهوة وحفظ المؤن، إضافة إلى أدوات الزراعة والرعي التي تعبّر عن طبيعة الحياة الريفية في المنطقة. كما يحتوي على مجموعة من الأسلحة التقليدية، والعملات القديمة، والوثائق التاريخية، والمخطوطات، إلى جانب الأزياء الشعبية والحُليّ.
+ويحرص صاحب القصر على إبراز العادات والتقاليد المرتبطة بالمناسبات الاجتماعية، مثل الزواجات والأعياد وطقوس الضيافة. ويؤدي المتحف دوراً مهماً في الاحتفالات الوطنية فقد أقامت محافظة أحد رفيدة أول حفل ليوم التأسيس في القصر كما أُقيم فيه ثلاث مبادرات إيجاويد وحفل ملتقى أصحاب المتاحف والقرى التراثية في مناطق عسير والباحة ومكة المكرمة وعدد كثير من المناسبات الاجتماعية واستقبال السياح من داخل المملكة ومن خارجها والوفود المدرسية والمهتمين بالتراث والسياحة وذلك لحفظ الموروث الشعبي وتعزيز الهوية الوطنية.`,
+    fullDescEn: `Al Rumaih Heritage Palace and Museum is one of the most prominent private heritage palaces and museums in the Asir region. It is distinguished by its traditional architectural style, reflecting the identity of old southern construction through the use of mud brick, stone, wood, and local decorative elements.
+The museum houses over five thousand heritage pieces once used for cooking, coffee preparation, and food storage, as well as agricultural and herding tools that reflect the rural lifestyle of the region. It also contains a collection of traditional weapons, old coins, historical documents, manuscripts, and traditional clothing and jewelry.
+The owner is keen to highlight customs and traditions linked to social occasions such as weddings, festivals, and hospitality rituals. The museum plays an important role in national celebrations: Ahad Rafidah Governorate held the first Founding Day ceremony at the palace; it has also hosted three Ejawid initiatives, the Heritage Museums and Villages Owners Forum in Asir, Al-Baha, and Makkah, and many social events, and welcomes tourists from inside and outside the Kingdom, school groups, and heritage and tourism enthusiasts, thus preserving folk heritage and strengthening national identity.`,
     images: [
       "/images/Al-Alrumaih-Museum-1.png",
       "/images/Al-Alrumaih-Museum-2.png",
+      "/images/Al-Alrumaih-Museum-3.png",
+      "/images/Al-Alrumaih-Museum-4.png",
     ],
     mapsUrl:
       "https://www.google.com/maps/place/4XQV%2BXPW+%D9%82%D8%B5%D8%B1+%D8%A7%D9%84%D8%B1%D9%85%D9%8A%D8%AD+%D8%A7%D9%84%D8%AA%D8%B1%D8%A7%D8%AB%D9%8A+%D8%A8%D8%AC%D9%88%D9%81+%D8%A2%D9%84+%D8%A7%D9%84%D8%B4%D9%88%D8%A7%D8%B7",
   },
   {
     slug: "al-jumaah-market",
-    nameAr: "سوق الجمعة التراثي",
-    nameEn: "Al-Jum'ah Traditional Market",
+    nameAr: "سوق الجمعة الشعبي بمركز الواديين",
+    nameEn: "Friday Traditional Market at Al-Wadayn Center",
     shortDescAr:
-      "سوق شعبي تراثي يُقام كل جمعة في الواديين، يجمع الباعة والأهالي لتبادل السلع التقليدية كالعسل والسمن والحبوب والمشغولات اليدوية.",
+      "سوق تراثي في مركز الواديين يُقام كل جمعة، يضم أدوات تراثية تعكس هوية المجتمع، والعسل والسمن والحبوب والمشغولات اليدوية.",
     shortDescEn:
-      "A heritage market held every Friday in Al-Wadayn, where vendors and residents gather to trade traditional goods including honey, ghee, grains, and handmade crafts.",
-    fullDescAr: `سوق الجمعة الشعبي بالواديين هو أحد الأسواق التراثية في مركز الواديين بمحافظة أحد رفيدة، التابعة لمنطقة عسير في المملكة العربية السعودية. ويُعدّ من أبرز المظاهر الاجتماعية والاقتصادية التي تعكس هوية المجتمع المحلي وتراثه الأصيل.
-
-يُقام السوق يوم الجمعة من كل أسبوع، حيث يجتمع فيه الباعة والأهالي من الواديين والقرى المجاورة لعرض وشراء المنتجات المحلية. ويشتهر بتوفير السلع التقليدية مثل العسل البلدي، والسمن، والحبوب، والخضروات، إضافة إلى المشغولات اليدوية والأدوات التراثية.
-
-ولا يقتصر دور السوق على كونه مكانًا للبيع والشراء، بل يُمثّل ملتقى اجتماعياً تتجدد فيه العلاقات وتُتبادل الأخبار، في أجواء تعبّر عن روح الأصالة والتكافل بين أفراد المجتمع.`,
-    fullDescEn: `Al-Jum'ah Traditional Market in Al-Wadayn is a heritage market located in Al-Wadayn Center, within the Ahad Rafidah Governorate in the Asir Region, Saudi Arabia. It is considered one of the most prominent social and economic landmarks that reflect the local community's identity and long-standing traditions.
-
-The market is held every Friday, where vendors and residents from Al-Wadayn and nearby villages gather to buy and sell local products. It is well known for offering traditional goods such as local honey, ghee, grains, fresh vegetables, handmade crafts, and heritage tools.
-
-Beyond commerce, the market serves as a social gathering place where people reconnect, exchange news, and strengthen community ties in an atmosphere that preserves the authentic spirit of Asir's cultural heritage.`,
+      "A heritage market at Al-Wadayn Center held every Friday, featuring heritage tools that reflect local identity, honey, ghee, grains, and handmade crafts.",
+    fullDescAr: `سوق الجمعة الشعبي بالواديين هو أحد الأسواق التراثية في مركز الواديين بمحافظة أحد رفيدة، التابعة لمنطقة عسير في المملكة العربية السعودية. ويُعدّ من أبرز الأسواق في المنطقة، كما يحتوي السوق على الأدوات التراثية التي تعكس هوية المجتمع المحلي وتراثه الأصيل، ويُقام السوق يوم الجمعة من كل أسبوع، حيث يجتمع فيه الباعة والأهالي من الواديين ومن كافة أنحاء المنطقة لعرض وشراء المنتجات المحلية. ويشتهر بتوفير السلع التقليدية مثل العسل البلدي، والسمن، والحبوب، والخضروات، إضافة إلى المشغولات اليدوية والأدوات التراثية، ولا يقتصر دور السوق على كونه مكانًا للبيع والشراء، بل يُمثّل ملتقى اجتماعياً تتجدد فيه العلاقات وتُتبادل الأخبار، في أجواء تعبّر عن روح الأصالة والتكافل بين أفراد المجتمع.`,
+    fullDescEn: `The Friday Traditional Market in Al-Wadayn is one of the heritage markets in Al-Wadayn Center, Ahad Rafidah Governorate, in the Asir region of the Kingdom of Saudi Arabia. It is one of the most prominent markets in the area and contains heritage tools that reflect the identity and authentic heritage of the local community. The market is held every Friday, when vendors and residents from Al-Wadayn and across the region gather to display and sell local products. It is known for traditional goods such as local honey, ghee, grains, and vegetables, as well as handicrafts and heritage tools. The market is not only a place for buying and selling but also a social meeting point where relationships are renewed and news is exchanged in an atmosphere of authenticity and solidarity.`,
     images: [
       "/images/Al-Jumah-Traditional-Market-1.png",
       "/images/Al-Jumah-Traditional-Market-2.png",
@@ -318,8 +298,8 @@ Located in Ahad Rafidah Governorate in the Asir region, the resort spans 40,000 
   },
   {
     slug: "saad-mashhor-museum",
-    nameAr: "متحف سعد بن مشهور التراثي",
-    nameEn: "Saad bin Mashhor Heritage Museum",
+    nameAr: "متحف سعد مشهور الشواطي للتراث",
+    nameEn: "Saad Mashhor Al-Shawati Heritage Museum",
     shortDescAr:
       "متحف تراثي يضم أكثر من 10,000 قطعة على مساحة تقارب 1000 م²، من مقتنيات نادرة يتجاوز عمر بعضها 400 عام، مع فناء خارجي ومسرح للفعاليات.",
     shortDescEn:
@@ -346,5 +326,94 @@ The museum’s distinction is not limited to its collection; it also includes an
     ],
     mapsUrl:
       "https://www.google.com/maps/search/%D9%85%D8%AA%D8%AD%D9%81+%D8%B3%D8%B9%D8%AF+%D8%A8%D9%86+%D9%85%D8%B4%D9%87%D9%88%D8%B1+%D8%A7%D9%84%D8%AA%D8%B1%D8%A7%D8%AB%D9%8A+%D8%A3%D8%AD%D8%AF+%D8%B1%D9%81%D9%8A%D8%AF%D8%A9",
+  },
+  {
+    slug: "al-shaib-educational-museum",
+    nameAr: "متحف الشايب التعليمي",
+    nameEn: "Al-Shaib Educational Museum",
+    shortDescAr:
+      "متحف تعليمي في أحد رفيدة تأسس 1440هـ، يضم أكثر من ثلاثين ركناً وكتباً قيمة تعكس الثقافة والتراث وتاريخ الدولة منذ التأسيس.",
+    shortDescEn:
+      "An educational museum in Ahad Rafidah established in 1440 AH, with over thirty sections and valuable books reflecting culture, heritage, and the history of the state since its founding.",
+    fullDescAr: `متحف الشايب التعليمي:
+
+يقع المتحف في محافظة أحد رفيدة بمنطقة عسير، وتأسس عام 1440 هـ وتم افتتاحه 24/11/1443 هـ من قبل محافظ محافظة أحد رفيدة آنذاك أ. متعب بن ناصر المتعب.
+والمتحف خاص بالتعليم، ويعتبر المتحف الثاني التعليمي على مستوى المملكة، ويشتمل المتحف على الكثير من الأركان تتجاوز الثلاثين ركناً، ويحتوي على العديد من الكتب القيمة والثرية بالمعلومات النادرة والمميزة، تم جمعها من مصادر عديدة، ويعكس المتحف للزوار الطابع الثقافي والتراثي للمنطقة والتاريخ المجيد لأجدادنا ويحكي جهود الدولة التي بذلها ولاة الأمر منذ تأسيس المملكة العربية السعودية إلى الآن أدام الله عليها نعمة الأمن والإيمان، ويقع المتحف بجوار مركز محافظة أحد رفيدة، حيث يتميز بقربه من موقع سوق أحد رفيدة القديم وقصور الشيخ حسين بن صمان، مما يجعل المتحف وجهة سياحية مميزة لزوار المنطقة.`,
+    fullDescEn: `Al-Shaib Educational Museum:
+
+The museum is located in Ahad Rafidah Governorate in the Asir region. It was established in 1440 AH and inaugurated on 24/11/1443 AH by the then Governor of Ahad Rafidah, Mr. Mut'ab bin Nasser Al-Mut'ab.
+The museum is dedicated to education and is considered the second educational museum in the Kingdom. It contains many sections, exceeding thirty, and holds numerous valuable books rich in rare and distinctive information gathered from various sources. The museum reflects for visitors the cultural and heritage character of the region and the glorious history of our forefathers, and tells of the efforts of the state and its rulers since the founding of the Kingdom of Saudi Arabia to the present day—may God perpetuate upon it the blessings of security and faith. The museum is located next to the Ahad Rafidah Governorate Centre and is distinguished by its proximity to the old Ahad Rafidah market and the palaces of Sheikh Hussein bin Samman, making it a distinctive tourist destination for visitors to the region.`,
+    images: [
+      "/images/alshaib-1.png",
+      "/images/alshaib-2.png",
+      "/images/alshaib-3.png",
+      "/images/alshaib-4.png",
+      "/images/alshaib-5.png",
+      "/images/alshaib-6.png",
+      "/images/alshaib-7.png",
+    ],
+    mapsUrl: "https://maps.app.goo.gl/DT4Ly8TLY5yyJG8J6?g_st=iw",
+  },
+  {
+    slug: "al-amiriya-museum",
+    nameAr: "متحف العامرية - بأحد رفيدة",
+    nameEn: "Al-Amiriya Museum - Ahad Rafidah",
+    shortDescAr:
+      "متحف في أحد رفيدة من ثلاث غرف يضم مجلساً شعبياً وأدوات القهوة والأسلحة والأدوات التراثية والجلديات والزراعة والعملات، جمع مقتنياته منذ أكثر من عشرين عاماً.",
+    shortDescEn:
+      "A museum in Ahad Rafidah with three rooms featuring a traditional majlis, coffee tools, weapons, heritage utensils, leatherwork, agriculture, and coins; collections gathered over more than twenty years.",
+    fullDescAr: `متحف العامرية - بأحد رفيدة
+
+يقع متحف العامرية في محافظة أحد رفيدة بمنطقة عسير، ويتكون المتحف من ثلاث غرف بها مجلس شعبي متكامل وأدوات القهوة والأسلحة المتنوعة وأدوات المطبخ التراثية القديمة والجلديات وأدوات الزراعة والعملات وبعض الأجهزة السمعية والبصرية وللمتحف إسهامات في تنشيط السياحة بالمحافظة، وقد قام المالك بجمع المقتنيات التراثية منذ أكثر من عشرين سنة، ويحتوي على العديد من المقتنيات التراثية المميزة التي تعكس تراث المنطقة والهوية التراثية بصورة فريدة، مما يعزز السياحة في منطقة عسير.`,
+    fullDescEn: `Al-Amiriya Museum - Ahad Rafidah
+
+Al-Amiriya Museum is located in Ahad Rafidah Governorate in the Asir region. The museum consists of three rooms containing a complete traditional majlis, coffee utensils, various weapons, old heritage kitchen tools, leatherwork, agricultural tools, coins, and some audio-visual equipment. The museum contributes to promoting tourism in the governorate. The owner has been collecting heritage pieces for more than twenty years. It houses many distinctive heritage items that uniquely reflect the heritage and identity of the region, thus enhancing tourism in the Asir region.`,
+    images: [
+      "/images/alameriah-1.png",
+      "/images/alameriah-2.png",
+      "/images/alameriah-3.png",
+      "/images/alameriah-4.png",
+      "/images/alameriah-5.png",
+      "/images/alameriah-6.png",
+      "/images/alameriah-7.png",
+      "/images/alameriah-8.png",
+      "/images/alameriah-9.png",
+      "/images/alameriah-10.png",
+    ],
+    mapsUrl: "https://maps.app.goo.gl/wKgT8S15Jv51NzCWA?g_st=iw",
+  },
+  {
+    slug: "heritage-mud-house",
+    nameAr: "بيت الطين التراثي",
+    nameEn: "Heritage Mud House",
+    shortDescAr:
+      "مزار سياحي في أحد رفيدة يتكون من ثلاثة أدوار، عمره أكثر من 73 عاماً، أُعيد إحياؤه وترميمه ليعبّر عن أصالة المنطقة وتراث الأجداد.",
+    shortDescEn:
+      "A tourist site in Ahad Rafidah with three floors, over 73 years old, revived and restored to express the authenticity of the region and the heritage of our forefathers.",
+    fullDescAr: `بيت الطين التراثي
+
+يقع بيت الطين التراثي في محافظة أحد رفيدة بمنطقة عسير، حيث يعد مزاراً سياحياً مميزاً على مستوى المنطقة، ويتكون من ثلاثة أدوار، منها إطلالة على المزارع، وشرفة مطلة على الشارع العام المؤدي للمستشفى الجديد بأحد رفيدة، ويعود عمر بيت الطين التراثي لأكثر من 73 عاماً، حيث قام أ. إبراهيم بن حسين بن دحموس حفظه الله بإعادة إحيائه وترميمه بشكل جميل ليصبح مزاراً سياحياً وتراثياً يعبر عن أصالة المنطقة وتراث الأجداد الأصيل، ويهتم الأستاذ إبراهيم بن دحموس بالحفاظ على تراث الأجداد ونقل الأثر للأحفاد، والحفاظ كذلك على الهوية التراثية للمنطقة، ويعد فناناً تشكيلياً متمكناً رسم المكان بتفاصيله الجميلة وذكرياته العريقة لنقل كل ما هو جميل عن منطقة عسير، ويعد وجهة سياحية تستحق الزيارة.`,
+    fullDescEn: `Heritage Mud House
+
+The Heritage Mud House is located in Ahad Rafidah Governorate in the Asir region. It is a distinctive tourist site in the area and consists of three floors, including views over farms and a balcony overlooking the main street leading to the new hospital in Ahad Rafidah. The Heritage Mud House is over 73 years old. Mr. Ibrahim bin Hussein bin Dahmus, may Allah preserve him, revived and beautifully restored it to become a heritage and tourist site that expresses the authenticity of the region and the heritage of our forefathers. Mr. Ibrahim bin Dahmus is keen to preserve the heritage of our ancestors and pass it on to future generations, and to preserve the heritage identity of the region. He is also a skilled visual artist who has depicted the place in its beautiful details and ancient memories to convey all that is beautiful about the Asir region. It is a tourist destination worth visiting.`,
+    images: ["/images/bait-elten-1.png"],
+    mapsUrl: "https://maps.app.goo.gl/zbMDHh5m5AVZoaq87?g_st=iw",
+  },
+  {
+    slug: "al-naib-palace-museum",
+    nameAr: "متحف قصر النائب للتراث",
+    nameEn: "Al-Naib Palace Heritage Museum",
+    shortDescAr:
+      "متحف في أحد رفيدة يعرض مقتنيات تراثية من بنادق وسيوف وحلي وأزياء وأدوات زراعة وألواح كتابة وصور فوتوغرافية قديمة.",
+    shortDescEn:
+      "A museum in Ahad Rafidah displaying heritage pieces including rifles, swords, jewelry, traditional dress, farming tools, writing slates, and old photographs.",
+    fullDescAr: `متحف قصر النائب للتراث
+
+يقع المتحف في محافظة أحد رفيدة في منطقة عسير، ويُعرض في المتحف مجموعة من المقتنيات التراثية كالبنادق والسيوف القديمة، والحلي والأزياء التراثية، والأدوات المستخدمة في الزراعة، وألواح الكتابة التعليمية، والصور الفوتوغرافية القديمة.`,
+    fullDescEn: `Al-Naib Palace Heritage Museum
+
+The museum is located in Ahad Rafidah Governorate in the Asir region. It displays a collection of heritage items including rifles and old swords, jewelry and traditional dress, tools used in agriculture, educational writing slates, and old photographs.`,
+    images: ["/images/mathaf-asr-elnaeb-1.png"],
+    mapsUrl: "https://maps.app.goo.gl/gukK5JfhV7UKbK9Z8?g_st=iw",
   },
 ];

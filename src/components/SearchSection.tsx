@@ -124,7 +124,7 @@ export default function SearchSection({ onSearch }: SearchSectionProps) {
             fontSize: isMobile ? "1rem" : "1.35rem",
           }}
         >
-          {isArabic ? "بسم الله نبدى وبه نستعين" : "In the name of God we begin and in Him we seek help"}
+          {isArabic ? "بسم الله نبدأ وبه نستعين" : "In the name of God we begin and in Him we seek help"}
         </p>
         <h1
           className="font-heading font-bold leading-tight"

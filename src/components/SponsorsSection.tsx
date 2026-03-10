@@ -55,7 +55,7 @@ export default function SponsorsSection() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          {isArabic ? "الرعاه" : "Sponsors"}
+          {isArabic ? "الرعاة" : "Sponsors"}
         </motion.h2>
 
         <motion.div
