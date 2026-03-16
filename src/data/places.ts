@@ -344,13 +344,16 @@ The museum’s distinction is not limited to its collection; it also includes an
 The museum is located in Ahad Rafidah Governorate in the Asir region. It was established in 1440 AH and inaugurated on 24/11/1443 AH by the then Governor of Ahad Rafidah, Mr. Mut'ab bin Nasser Al-Mut'ab.
 The museum is dedicated to education and is considered the second educational museum in the Kingdom. It contains many sections, exceeding thirty, and holds numerous valuable books rich in rare and distinctive information gathered from various sources. The museum reflects for visitors the cultural and heritage character of the region and the glorious history of our forefathers, and tells of the efforts of the state and its rulers since the founding of the Kingdom of Saudi Arabia to the present day—may God perpetuate upon it the blessings of security and faith. The museum is located next to the Ahad Rafidah Governorate Centre and is distinguished by its proximity to the old Ahad Rafidah market and the palaces of Sheikh Hussein bin Samman, making it a distinctive tourist destination for visitors to the region.`,
     images: [
-      "/images/alshaib-1.png",
-      "/images/alshaib-2.png",
-      "/images/alshaib-3.png",
-      "/images/alshaib-4.png",
-      "/images/alshaib-5.png",
-      "/images/alshaib-6.png",
-      "/images/alshaib-7.png",
+      "/images/alsheib-1.png",
+      "/images/alsheib-2.png",
+      "/images/alsheib-3.png",
+      "/images/alsheib-4.png",
+      "/images/alsheib-5.png",
+      "/images/alsheib-6.png",
+      "/images/alsheib-7.png",
+      "/images/alsheib-8.png",
+      "/images/alsheib-9.png",
+      "/images/alsheib-10.png",
     ],
     mapsUrl: "https://maps.app.goo.gl/DT4Ly8TLY5yyJG8J6?g_st=iw",
   },
@@ -368,18 +371,7 @@ The museum is dedicated to education and is considered the second educational mu
     fullDescEn: `Al-Amiriya Museum - Ahad Rafidah
 
 Al-Amiriya Museum is located in Ahad Rafidah Governorate in the Asir region. The museum consists of three rooms containing a complete traditional majlis, coffee utensils, various weapons, old heritage kitchen tools, leatherwork, agricultural tools, coins, and some audio-visual equipment. The museum contributes to promoting tourism in the governorate. The owner has been collecting heritage pieces for more than twenty years. It houses many distinctive heritage items that uniquely reflect the heritage and identity of the region, thus enhancing tourism in the Asir region.`,
-    images: [
-      "/images/alameriah-1.png",
-      "/images/alameriah-2.png",
-      "/images/alameriah-3.png",
-      "/images/alameriah-4.png",
-      "/images/alameriah-5.png",
-      "/images/alameriah-6.png",
-      "/images/alameriah-7.png",
-      "/images/alameriah-8.png",
-      "/images/alameriah-9.png",
-      "/images/alameriah-10.png",
-    ],
+    images: ["/images/alameriah-1.png"],
     mapsUrl: "https://maps.app.goo.gl/wKgT8S15Jv51NzCWA?g_st=iw",
   },
   {
@@ -396,7 +388,16 @@ Al-Amiriya Museum is located in Ahad Rafidah Governorate in the Asir region. The
     fullDescEn: `Heritage Mud House
 
 The Heritage Mud House is located in Ahad Rafidah Governorate in the Asir region. It is a distinctive tourist site in the area and consists of three floors, including views over farms and a balcony overlooking the main street leading to the new hospital in Ahad Rafidah. The Heritage Mud House is over 73 years old. Mr. Ibrahim bin Hussein bin Dahmus, may Allah preserve him, revived and beautifully restored it to become a heritage and tourist site that expresses the authenticity of the region and the heritage of our forefathers. Mr. Ibrahim bin Dahmus is keen to preserve the heritage of our ancestors and pass it on to future generations, and to preserve the heritage identity of the region. He is also a skilled visual artist who has depicted the place in its beautiful details and ancient memories to convey all that is beautiful about the Asir region. It is a tourist destination worth visiting.`,
-    images: ["/images/bait-elten-1.png"],
+    images: [
+      "/images/beit-elten-1.png",
+      "/images/beit-elten-2.png",
+      "/images/beit-elten-3.png",
+      "/images/beit-elten-4.png",
+      "/images/beit-elten-5.png",
+      "/images/beit-elten-6.png",
+      "/images/beit-elten-7.png",
+      "/images/beit-elten-8.png",
+    ],
     mapsUrl: "https://maps.app.goo.gl/zbMDHh5m5AVZoaq87?g_st=iw",
   },
   {
